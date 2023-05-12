@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif !important;
+    font-size: 16px;
+}
+.wrapp_course {
+    background: #FAFAFA;
+    
+} 
+.wrapp_course .content  {
+    display: flex;
+    gap: 25px;
+    width: 82%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 60px
+}
+.wrapp_course .content .body_content_left {
+    width: 72%;
+}
+.wrapp_course .content .body_content_right {
+    width: 26%;
+}
+
+.header_screening {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.header_screening li {
+    width: 25%;
+}
+
+.header_screening li:first-child {
+   display: flex; 
+   width: 47%;
+   align-items: center;
+}
+
+/*  */
+.content .body_content_left .box_content-course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    margin-top: 20px
+}
+.content .body_content_right .header-filterList {
+    display: flex;
+    justify-content: space-between;
+    height: 37px;
+    align-items: center;
+}
+
+/*  wrapp list filters */
+.content_listFilters_course {
+    margin-top: 20px;
+}
+.css-et1ao3-MuiTypography-root {
+    font-size: 16px !important
+}
+
+
+/* responsive */
+@media only screen and (max-width: 1115px) {
+    .wrapp_course .content {
+        display: flex;
+        gap: 25px;
+        width: 82%;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        flex-wrap: wrap-reverse;
+    }
+    .wrapp_course .content .body_content_left {
+        width: 100%;
+    }
+    .wrapp_course .content .body_content_right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 924px) {
+  
+}
+
+@media only screen and (max-width: 743px) {
+    .content .body_content_left .box_content-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content .body_content_left .box_content-course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .wrapp_course .content {
+        width: 94%;
+    }
+}

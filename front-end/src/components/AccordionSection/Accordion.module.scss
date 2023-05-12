@@ -1,0 +1,30 @@
+.accordion {
+  margin: 10px 0;
+  background-color: rgba(161, 196, 253, 0.12) !important;
+  // box-shadow: 0 0 5px rgba(40, 128, 1, 1);
+}
+
+.title {
+  font-size: 1.4rem;
+}
+
+.lecture {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  :hover {
+    color: var(--primary);
+  }
+  span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.4rem;
+  }
+}
+
+.accordionDetails {
+  background-color: var(--white);
+}

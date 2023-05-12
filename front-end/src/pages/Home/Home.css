@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background: red; */
+    color: orange;
+}
+/* Header Home */
+.wrapp_header_home {
+    position: relative;
+    /* background: pink; */
+    /* padding-top: 130px; */
+    /* min-height: 750px; */
+}
+.wrapp_header_home .bg_main_img {
+    width: 100%;
+    height: 750px;
+}
+.wrapp_header_home .box_content_header {
+    position: absolute;
+    width: 80%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* bottom: 0; */
+    /* transform: translateY(-50%); */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-top: 0px; */
+    /* height: 550px; */
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.box_content_header .right_content {
+    width: 40%;
+} 
+.box_content_header .left_content {
+    width:55%;
+}
+.box_content_header .left_content h1 {
+    font-size: 45px;
+    color: #22100D;
+    line-height: initial;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.box_content_header .left_content p {
+    font-size: 20px;
+    color: #685F78;
+}
+.box_content_header .left_content ul {
+    display: flex;
+    margin-top: 80px;
+    gap: 30px
+}
+.left_content ul li b {
+    font-size: 45px;
+}
+.star_icon {
+    color: #FFB800;
+    font-size: 20px;
+    align-items: center
+}
+.left_content ul li:first-child {
+    
+}
+
+/* groud_cardIntro-header */
+.groud_cardIntro-header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    /* bottom: 20%; */
+    margin: auto;
+    /* top: 0; */
+    left: -1%;
+    right: 0;
+    bottom: -20px;
+    align-items: center;
+}
+.groud_cardIntro-header li {
+    width: 20%;
+    height: 85px;
+}
+
+/* Body home */
+.wrapp_body_home {
+    margin-top: 82px;
+}
+/*  */
+.wrapp_body_home .box_carosel_topCate {
+    width: 82%;
+    margin: auto;
+    margin-top: 80px;
+}
+.box_featured_courses .content-cardTopCate {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+/* master skill content */
+.wrapp_body_home .master_skill_content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.wrapp_body_home .master_skill_content .left-content {
+    width: 60%;
+}
+.left-content .wrap_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+.left-content .wrap_box li {
+    width: 82.5%;
+    max-height: 70px;
+    margin-bottom: 50px;
+}
+.wrapp_body_home .master_skill_content .right-content {
+    width: 40%;
+}
+.master_skill_content .right-content img {
+    width: 98%;
+}
+
+/* trending courses */
+.trending_courses {
+    /* background: red */
+}
+.trending_courses .box_carosel_trending {
+    width: 82%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 70px
+}
+
+/* banner advertising */
+.banner_advertising {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.banner_advertising h1 {
+    font-size: 37px;
+    color: #000;
+}
+
+/* brand funding */
+.brand_funding {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+/* box content inform */
+.box-content-inform {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-content-inform div {
+    width: 50%;
+}
+
+/*  */
+.load_morePr-home {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width: 1115px) {
+    .groud_cardIntro-header {
+        flex-wrap: wrap;
+        min-height: 295px;
+    }
+    .groud_cardIntro-header li {
+        width: 49%;
+    }
+    .wrapp_body_home .master_skill_content .left-content {
+        width: 100%;
+    }
+    .box_featured_courses .content-cardTopCate {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .brand_funding {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 924px) {
+    .groud_cardIntro-header {
+        flex-wrap: wrap;
+        min-height: 295px;
+        position: relative;
+    }
+    .wrapp_body_home .master_skill_content {
+        flex-wrap: wrap;
+    }
+    .left-content .wrap_box li {
+        width: 100%;
+    }
+    .box_featured_courses .content-cardTopCate {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box_favourite_course ul li:first-child {
+        width: 100%;
+    }
+    .box_favourite_course .content {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .wrapp_header_home .box_content_header {
+        flex-wrap: wrap;
+    }
+    .box_content_header .left_content {
+        width: 100%;
+    }
+    .wrapp_header_home .bg_main_img {
+        width: 100%;
+        min-height: 1175px;
+    }
+    .box_content_header .right_content {
+        width: 100%;
+    }
+    .left-content .wrap_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .wrapp_body_home .master_skill_content .right-content {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .box_favourite_course ul li:last-child {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .groud_cardIntro-header li {
+        width: 100%;
+    }
+    .groud_cardIntro-header {
+        min-height: 580px;
+    }
+
+    .wrapp_header_home .box_content_header {
+        width: 90%;
+    }
+    .groud_cardIntro-header {
+        width: 90%;
+    }
+    .box_featured_courses .content-cardTopCate {
+        width: 90%;
+    }
+    .wrapp_body_home .master_skill_content {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .box_featured_courses .content-cardTopCate {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .brand_funding li {
+        width: 50%;
+    }
+    .brand_funding {
+        display: flex;
+        width: 42%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 70px;
+        gap: 29px;
+    }
+    .groud_cardIntro-header {
+        width: 90%;
+    }
+    .box_featured_courses .content-cardTopCate {
+        width: 90%;
+    }
+    .wrapp_body_home .master_skill_content {
+        width: 95%;
+    }
+    .box-content-inform {
+        width: 95%;
+    }
+    .box-content-inform div img {
+        width: 95%;
+    }
+    .box-content-inform div {
+        width: 95%;
+    }
+}

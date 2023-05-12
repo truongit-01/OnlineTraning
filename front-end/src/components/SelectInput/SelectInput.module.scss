@@ -1,0 +1,21 @@
+.selectInput {
+  width: 100%;
+  input {
+    height: 100%;
+  }
+  fieldset {
+    border-color: var(--border-input) !important;
+  }
+  &:hover {
+    fieldset {
+      border-color: var(--border-input) !important;
+    }
+  }
+  :global(.MuiSelect-select) {
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-color) !important;
+  }
+}

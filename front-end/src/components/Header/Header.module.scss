@@ -1,0 +1,131 @@
+.container {
+  height: var(--default-layout-header-height);
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 100%;
+  z-index: 999;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.078);
+}
+
+.menuIcon {
+  color: black;
+  font-size: 3rem !important;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: var(--default-layout-width);
+  margin: auto;
+  padding: 0 12px;
+  height: 100%;
+}
+
+.logoItem {
+  width: 95px;
+  img {
+    width: 100%;
+  }
+}
+
+.inputItem {
+  display: flex;
+  align-items: center;
+  :global(.MuiOutlinedInput-root) {
+    border-radius: 50px;
+  }
+  :global(.Mui-focused) {
+    fieldset {
+      border-color: var(--primary) !important;
+    }
+  }
+  input {
+    width: 20vw;
+    font-size: 1.6rem;
+    padding: 10px 15px;
+    &::placeholder {
+      font-size: 1.4rem;
+    }
+  }
+  position: relative;
+}
+
+.listOptionSearch {
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  width: 90%;
+  border: 1px solid #d1d7dc;
+  img {
+    width: 40px;
+  }
+  h3 {
+    color: var(--text-color);
+    font-size: 1.4rem;
+  }
+  .moreCourse {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.listSearch {
+  cursor: pointer;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  &:hover {
+    background-color: #f7f9fa;
+  }
+}
+
+.listItem {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      color: var(--primary);
+    }
+    &.active {
+      color: var(--primary);
+    }
+  }
+}
+
+.controlItem {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  // button {
+  //   font-size: 1.6rem;
+  //   font-weight: 500;
+  //   border-color: #b4a7f5;
+  //   color: var(--text-color-second);
+  //   border-radius: 50px;
+  //   border: solid 2px;
+  //   padding: 10px 15px;
+  //   min-width: 150px;
+  //   text-transform: capitalize;
+
+  //   &:hover {
+  //     background-color: var(--primary);
+  //     border-color: var(--primary);
+  //     color: var(--white);
+  //   }
+  // }
+}

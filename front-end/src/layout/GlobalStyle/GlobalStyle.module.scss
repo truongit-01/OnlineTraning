@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  // color
+  --primary: #f66962;
+  --primary-second: #b4a7f5;
+  --white: #ffffff;
+  --black: #000;
+  --text-color: #333;
+  --text-color-second: #392c7d;
+  --color-button-save: #159f46;
+  --color-button-back: #263238;
+  --color-button-next: #1d9cfd;
+  --border-input: #e9ecef;
+  --placeholder: #070707;
+  --global-layout-background: #fafafa;
+  --star-color: #ffb800;
+  //default layout
+  --default-layout-header-height: 70px;
+  --default-layout-width: 80%;
+  // --default-layout-width: 1320px;
+
+  //header
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  color: var(--text-color);
+  background-color: var(--global-layout-background);
+}
+
+// input,
+// [tabindex] {
+//   outline: none;
+//   border: none;
+// }
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+:global(.MuiButtonBase-root) {
+  font-size: 1.4rem !important;
+}
